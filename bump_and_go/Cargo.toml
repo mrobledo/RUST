@@ -1,0 +1,19 @@
+[package]
+authors = ["Mariano Martínez"]
+name = "bump_and_go"
+version = "0.0.1"
+
+[dependencies]
+env_logger = "0.5"
+rosrust = {path="../rosrust/rosrust"}
+rosrust_codegen = {path="../rosrust/rosrust_codegen"}
+serde = "1.0.25"
+serde_derive = "1.0.25"
+rand = "0.4"
+
+[[bin]]
+name = "bump_and_go"
+path = "bumpAndGo.rs"
+
+[build-dependencies]
+rosrust_codegen = {path="../rosrust/rosrust_codegen"}
